@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/bootswatch.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script tpye="text/javascript">
         $(document).ready(function () {
             $('.release-notes').click(function () {
@@ -32,15 +33,123 @@
         #releases th:nth-child(3), #releases th:nth-child(4), #releases td:nth-child(3), #releases td:nth-child(4) {
             text-align: center;
         }
+        
+        footer {
+            margin-top: 50px;
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jisp Pilot</a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#instructions">Tester Instructions</a></li>
+                    <li><a href="#feedback">Submitting Feedback</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <div class="container">
         <div class="page-header">
             <h1>Jisp Pilot</h1>
         </div>
         
-        <div class="bs-docs-section">
+        <div id="instructions" class="bs-docs-section">
+            <h2>Tester Instructions</h2>
+            
+            <p>
+                Thank you for taking part of the Jisp pilot programme.  Please install the app onto your Android or iPhone
+                device (<a href="#installation">installation</a> details below).
+            </p>
+            
+            <p>
+                Your feedback is greatly valuable to us and we are looking for feedback that covers the following:
+            </p>
+            
+            <ul>
+                <li>Does the app look and feel right?</li>
+                <li>Did you receive offers when you entered a store?</li>
+                <li>Were there any confusing things about the app?</li>
+                <li>Were there any features you didn't like or want to use, or features you wish it had?</li>
+                <li>What could be improved about the offers given to you?</li>
+                <li>Did you experience any technical issues?</li>
+            </ul>
+        </div>
+
+        <div id="feedback" class="bs-docs-section">
+            <h2>Submitting Feedback</h2>
+
+            <p>
+                There are two easy ways to submit feedback.
+            </p>
+            
+            <ol>
+                <li>There is a <strong>Provide feedback</strong> menu in the app.  This is a great way to express what
+                    you're thinking at any moment when using the app.  Just type what your thoughts and it will be sent
+                    directly to us.</li>
+                <li>Email us any particular feedback to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a>.  Please include the following to help us make improvements:
+                    <ul>
+                        <li>The device you are using (e.g. iPhone 6, Samsung Galaxy S3)</li>
+                        <li>The shop you were in if it was related to a given shop</li>
+                        <li>A screenshot of the app if it doesn't look right (<strong>Power</strong> + <strong>Home</strong> button iOS, <a href="http://www.pcadvisor.co.uk/how-to/google-android/how-take-screenshot-on-android-phones-tablets-3446798/" rel="noreferrer" target="_blank">See this</a> for Android).</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div id="installation" class="bs-docs-section">
+            <h2>Installation Instructions</h2>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Android</h3>
+                        
+                    <ol>
+                        <li>Select <strong>Install</strong> from the downloads list below for Android</li>
+                        <li>If you get the message <em>Install Blocked - For security, your phone is set to block
+                            installation of apps obtained from unknown sources</em>, tap <strong>Settings</strong>
+                            and check <strong>Unknown sources</strong></strong>.  This is to allow the installation
+                            from outside the Google Play store.  A dialog may appear, just accept it with the default parameters.</li>
+                        <li>The installation should appear, tap <strong>Install</strong>.  If you do not get the installation box, you
+                            may find the app has been downloaded in your notification list, open it from there to start the install.</li>
+                    </ol>
+                </div>
+                
+                <div class="col-sm-6">
+                    <h3>iPhone</h3>
+                    
+                    <ol>
+                        <li>Email your UDID number number to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a> to be included in the pilot for iPhone
+                            <ol>
+                                <li>Go to <a href="http://get.udid.io/" target="_blank">http://get.udid.io/</a> in Safari on your iPhone</li>
+                                <li>Tap <strong>Get your UDID</strong>, this will take you to a screen saying <strong>Install Profile</strong></li>
+                                <li>Tap <strong>Install</strong> and follow the onscreen instructions</li>
+                                <li>Copy your UDID and send it via email to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a></li>
+                            </ol>
+                        </li>
+                        <li>When you have confrmation that you are registered to the pilot, select <strong>Install</strong> from the downloads list below for iOS</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <div id="downloads" class="bs-docs-section">
+            <h3>Downloads</h3>
             <table id="releases" class="table table-striped">
                 <thead>
                     <tr>
@@ -59,7 +168,7 @@
                         <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5/manifest.plist">Install</a></td>
                         <td><a href="#" class="release-notes">Release Notes</a></td>
                     </tr>
-                    <tr>
+                    <tr class="expanded">
                         <td colspan="5">
                             <h3>Release notes</h3>
                             <p>
@@ -84,7 +193,9 @@
                             <h3>Known issues</h3>
                             
                             <ul>
+                                <li>Branding still contains Shop360 for Android and a mix of Open360/Shop360 on iOS</li>
                                 <li>Beacons won't work unless the app has started when logged in.  When you first log in or register and account, close the app and reopen it (Android hold down the home button and swipe the app away, iOS double tap the home button and swipe the app away).</li>
+                                <li>Setting your profile does not save correctly when navigating away from the About Me page</li>
                                 <li>Missing store contact details shows as blank fields on the store info</li>
                                 <li>Unable to unfavourite an offer</li>
                                 <li>Unable to unreject an offer</li>
@@ -101,6 +212,12 @@
                 </tbody>
             </table>
         </div>
+        
+        <footer class="bs-docs-section">
+            <p>
+                Copyright &copy; 2015 Bubbles Online Services Ltd
+            </p>
+        </footer>
     </div>
 </body>
 </html>
