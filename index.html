@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jisp Pilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script tpye="text/javascript">
+        $(document).ready(function () {
+            $('.release-notes').click(function () {
+                $(this).parents('tr').next().toggleClass('expanded');
+                return false;
+            });
+        });
+        
+    </script>
+    
+    <style type="text/css">        
+        #releases tbody tr:last-child {
+            display: none;
+        }
+        
+        #releases tbody tr:last-child.expanded {
+            display: table-row;
+        }
+        
+        #releases th:nth-child(3), #releases th:nth-child(4), #releases td:nth-child(3), #releases td:nth-child(4) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Jisp Pilot</h1>
+        </div>
+        
+        <div class="bs-docs-section">
+            <table id="releases" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th><i class="fa fa-android"></i></th>
+                        <th><i class="fa fa-apple"></i></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="v0-5-0">
+                    <tr>
+                        <td>0.5.0</td>
+                        <td>Initial test version</td>
+                        <td><a href="v0.5/Shop360-v0.5.apk">Install</a></td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5/manifest.plist">Install</a></td>
+                        <td><a href="#" class="release-notes">Release Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h3>Release notes</h3>
+                            <p>
+                                <strong>Note: This version only runs against the staging server</strong>
+                            </p>
+                            
+                            <p>
+                                First version with the following features:
+                            </p>
+                            
+                            <ul>
+                                <li>Account sign up, login and password reset</li>
+                                <li>Beacon detection and show store offers</li>
+                                <li>Browse stores</li>
+                                <li>Store info</li>
+                                <li>Submit feedback</li>
+                                <li>Manage account</li>
+                                <li>Set personality profile</li>
+                                <li>Favourite offers</li>
+                            </ul>
+                            
+                            <h3>Known issues</h3>
+                            
+                            <ul>
+                                <li>Beacons won't work unless the app has started when logged in.  When you first log in or register and account, close the app and reopen it (Android hold down the home button and swipe the app away, iOS double tap the home button and swipe the app away).</li>
+                                <li>Missing store contact details shows as blank fields on the store info</li>
+                                <li>Unable to unfavourite an offer</li>
+                                <li>Unable to unreject an offer</li>
+                                <li>Unable to view all offers (only needed when retailers start targeting)</li>
+                                <li>Limited to 50 stores on the browse (pagination not yet supported)</li>
+                                <li>Limited to 50 offers per store (pagination not yet supported)</li>
+                                <li>Image based offers not yet requesting a scaled down version</li>
+                                <li>Terms of service content yet to be written</li>
+                                <li>No privacy statement (required for Apple)</li>
+                                <li>Expired offers if favourite not yet marked as such</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
