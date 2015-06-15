@@ -164,11 +164,12 @@
                     </tr>
                 </thead>
                 <tbody id="v0-5-0">
+
                     <tr>
-                        <td>0.5.0</td>
+                        <td>0.5.1</td>
                         <td>Initial test version</td>
-                        <td><a href="v0.5/Shop360-v0.5.apk">Download</a></td>
-                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5/manifest.plist">Install</a></td>
+                        <td><a href="v0.5.1/Jisp-v0.5.1.apk">Download</a></td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5.1/manifest.plist">Install</a></td>
                         <td><a href="#" class="release-notes">Release Notes</a></td>
                     </tr>
                     <tr class="expanded">
@@ -176,14 +177,57 @@
                             <h3>Release notes</h3>
                             <p>
                                 Staging server versions:<br>
+                                <a href="v0.5.1/Jisp-DEV-v0.5.1.apk"><i class="fa fa-android"></i> Download Android</a><br>
+                                <a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5.1/manifest-dev.plist"><i class="fa fa-apple"></i> Install iPhone</a>
+                            </p>
+
+                            <h3>Changes</h3>
+
+                            <ul>
+                                <li>Jisp branding</li>
+                                <li>Added the ability for the beacon service to be restarted</li>
+                                <li>Fixed the timing of when the beacon service starts when not logged in</li>
+                                <li>Fixed padding on favourites page when there are no Favourites</li>
+                                <li>Fixed missing profile name in the menu when first registering</li>
+                                <li>About me should be fixed when the server is updated</li>
+                            </ul>
+
+                            <h3>Known issues</h3>
+
+                            <ul>
+                                <li>Missing store contact details shows as blank fields on the store info</li>
+                                <li>Unable to unfavourite an offer</li>
+                                <li>Unable to unreject an offer</li>
+                                <li>Unable to view all offers (only needed when retailers start targeting)</li>
+                                <li>Limited to 50 stores on the browse (pagination not yet supported)</li>
+                                <li>Limited to 50 offers per store (pagination not yet supported)</li>
+                                <li>Image based offers not yet requesting a scaled down version</li>
+                                <li>No privacy statement (required for Apple)</li>
+                                <li>Expired offers if favourite not yet marked as such</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0.5.0</td>
+                        <td>Initial test version</td>
+                        <td><a href="v0.5/Shop360-v0.5.apk">Download</a></td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5/manifest.plist">Install</a></td>
+                        <td><a href="#" class="release-notes">Release Notes</a></td>
+                    </tr>
+                    <tr class="">
+                        <td colspan="5">
+                            <h3>Release notes</h3>
+                            <p>
+                                Staging server versions:<br>
                                 <a href="v0.5/Shop360-DEV-v0.5.apk"><i class="fa fa-android"></i> Download Android</a><br>
                                 <a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.5/manifest-dev.plist"><i class="fa fa-apple"></i> Install iPhone</a>
                             </p>
-                            
+
                             <p>
                                 First version with the following features:
                             </p>
-                            
+
                             <ul>
                                 <li>Account sign up, login and password reset</li>
                                 <li>Beacon detection and show store offers</li>
@@ -194,9 +238,9 @@
                                 <li>Set personality profile</li>
                                 <li>Favourite offers</li>
                             </ul>
-                            
+
                             <h3>Known issues</h3>
-                            
+
                             <ul>
                                 <li>Branding still contains Shop360 for Android and a mix of Open360/Shop360 on iOS</li>
                                 <li>Beacons won't work unless the app has started when logged in.  When you first log in or register and account, close the app and reopen it (Android hold down the home button and swipe the app away, iOS double tap the home button and swipe the app away).</li>
