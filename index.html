@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<!-- ReSharper disable Html.PathError -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -73,7 +74,7 @@
             <h2>Tester Instructions</h2>
 
             <p>
-                Thank you for taking part of the Jisp pilot programme.  Please install the app onto your Android or iPhone
+                Thank you for taking part of the Jisp pilot programme. Please install the app onto your Android or iPhone
                 device (<a href="#installation">installation</a> details below).
             </p>
 
@@ -100,12 +101,12 @@
 
             <ol>
                 <li>
-                    There is a <strong>Provide feedback</strong> menu item in the app.  This is a great way to express what
-                    you're thinking at any moment when using the app.  Just type what your thoughts and it will be sent
+                    There is a <strong>Provide feedback</strong> menu item in the app. This is a great way to express what
+                    you're thinking at any moment when using the app. Just type what your thoughts and it will be sent
                     directly to us.
                 </li>
                 <li>
-                    Email us any particular feedback to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a>.  Please include the following to help us make improvements:
+                    Email us any particular feedback to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a>. Please include the following to help us make improvements:
                     <ul>
                         <li>The device you are using (e.g. iPhone 6, Samsung Galaxy S3)</li>
                         <li>The shop you were in if it was related to a given shop</li>
@@ -171,6 +172,75 @@
                         <th></th>
                     </tr>
                 </thead>
+
+                <tbody id="v0-6-10-demo">
+                    <tr>
+                        <td>0.6.10 (demo)</td>
+                        <td>Version for the demo show</td>
+                        <td><a href="demo-v0.6.10/Jisp-live.apk">Download</a></td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/demo-v0.6.10/manifest.plist">Install</a></td>
+                        <td><a href="#" class="release-notes">Release Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h3>Release notes</h3>
+                            <p>
+                                Staging server versions:<br>
+                                <a href="demo-v0.6.10/Jisp-stage.apk"><i class="fa fa-android"></i> Download Android</a><br>
+                                <a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/demo-v0.6.10/manifest-dev.plist"><i class="fa fa-apple"></i> Install iPhone</a>
+                            </p>
+
+                            <h3>Changes</h3>
+
+                            <ul>
+                                <li>Splash screen and welcome screen background changes</li>
+                            </ul>
+
+                            <h3>Known issues</h3>
+
+                            <ul>
+                                <li>Unable to view all offers (only needed when retailers start targeting)</li>
+                                <li>Limited to 50 stores on the browse (pagination not yet supported)</li>
+                                <li>Limited to 50 offers per store (pagination not yet supported)</li>
+                                <li>Expired offers if favourite not yet marked as such</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody id="v0-6-10">
+                    <tr>
+                        <td>0.6.10</td>
+                        <td>New test version</td>
+                        <td><a href="v0.6.10/Jisp-live.apk">Download</a></td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.6.10/manifest.plist">Install</a></td>
+                        <td><a href="#" class="release-notes">Release Notes</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <h3>Release notes</h3>
+                            <p>
+                                Staging server versions:<br>
+                                <a href="v0.6.10/Jisp-stage.apk"><i class="fa fa-android"></i> Download Android</a><br>
+                                <a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/v0.6.10/manifest-dev.plist"><i class="fa fa-apple"></i> Install iPhone</a>
+                            </p>
+
+                            <h3>Changes</h3>
+
+                            <ul>
+                                <li>Splash screen and welcome screen background changes</li>
+                            </ul>
+
+                            <h3>Known issues</h3>
+
+                            <ul>
+                                <li>Unable to view all offers (only needed when retailers start targeting)</li>
+                                <li>Limited to 50 stores on the browse (pagination not yet supported)</li>
+                                <li>Limited to 50 offers per store (pagination not yet supported)</li>
+                                <li>Expired offers if favourite not yet marked as such</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
 
                 <tbody id="v0-6-9-demo">
                     <tr>
@@ -863,7 +933,6 @@
                 </tbody>
 
                 <tbody id="v0-5-2">
-
                     <tr>
                         <td>0.5.2</td>
                         <td>Bug fixes</td>
@@ -986,7 +1055,7 @@
 
                             <ul>
                                 <li>Branding still contains Shop360 for Android and a mix of Open360/Shop360 on iOS</li>
-                                <li>Beacons won't work unless the app has started when logged in.  When you first log in or register and account, close the app and reopen it (Android hold down the home button and swipe the app away, iOS double tap the home button and swipe the app away).</li>
+                                <li>Beacons won't work unless the app has started when logged in. When you first log in or register and account, close the app and reopen it (Android hold down the home button and swipe the app away, iOS double tap the home button and swipe the app away).</li>
                                 <li>Setting your profile does not save correctly when navigating away from the About Me page</li>
                                 <li>Missing store contact details shows as blank fields on the store info</li>
                                 <li>Unable to unfavourite an offer</li>
@@ -1013,3 +1082,4 @@
     </div>
 </body>
 </html>
+<!-- ReSharper restore Html.PathError -->
