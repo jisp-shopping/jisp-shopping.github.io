@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://stage.jisp.com/JispNearables.ipa</string>
+					<string>https://jisp-shopping.github.io/Nearables/JispNearables.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
