@@ -15,7 +15,7 @@
     <script tpye="text/javascript">
         $(document).ready(function () {
             $('.release-notes').click(function () {
-                $(this).parents('tr').next().toggleClass('expanded');
+                $(this).next().toggleClass('expanded');
                 return false;
             });
         });
@@ -29,10 +29,11 @@
 
             #releases tbody tr:last-child.expanded {
                 display: table-row;
+                background-color: cornsilk;
             }
 
-        #releases th:nth-child(3), #releases th:nth-child(4), #releases td:nth-child(3), #releases td:nth-child(4) {
-            text-align: center;
+        .release-notes {
+            cursor: pointer;
         }
 
         footer {
@@ -145,28 +146,26 @@
             <table id="releases" class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Version</th>
-                        <th>Description</th>
-                        <th><i class="fa fa-apple"></i> Stage ver.</th>
-                        <th><i class="fa fa-apple"></i> Live ver.</th>
-                        <th><i class="fa fa-android"></i> Stage ver.</th>
-                        <th><i class="fa fa-android"></i> Live ver.</th>
-                        <th></th>
+                        <th>Ver.</th>
+                        <th>Desc.</th>
+                        <th><i class="fa fa-apple"></i> Stage</th>
+                        <th><i class="fa fa-apple"></i> Live</th>
+                        <th><i class="fa fa-android"></i> Stage</th>
+                        <th><i class="fa fa-android"></i> Live</th>
                     </tr>
                 </thead>
 
                 <tbody id="v1-0-13">
-                    <tr>
+                    <tr class="release-notes">
                         <td>1.0.13</td>
                         <td>Initial test version</td>
                         <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/New/v1.0.13/manifest-dev.plist">Install</a></td>
                         <td>N/A</td>
                         <td>N/A</td>
                         <td>N/A</td>
-                        <td><a href="#" class="release-notes">Release Notes</a></td>
                     </tr>
                     <tr class="expanded">
-                        <td colspan="7">
+                        <td colspan="6">
                             <h3>Release notes</h3>
 
                             <p>
