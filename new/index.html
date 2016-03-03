@@ -1,0 +1,202 @@
+﻿<!-- ReSharper disable Html.PathError -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jisp Pilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script tpye="text/javascript">
+        $(document).ready(function () {
+            $('.release-notes').click(function () {
+                $(this).parents('tr').next().toggleClass('expanded');
+                return false;
+            });
+        });
+
+    </script>
+
+    <style type="text/css">
+        #releases tbody tr:last-child {
+            display: none;
+        }
+
+            #releases tbody tr:last-child.expanded {
+                display: table-row;
+            }
+
+        #releases th:nth-child(3), #releases th:nth-child(4), #releases td:nth-child(3), #releases td:nth-child(4) {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jisp Xamarin Version</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Nearables/JispNearables.html">Jisp Nearables</a></li>
+                    <li><a href="#instructions">Tester Instructions</a></li>
+                    <li><a href="#feedback">Submitting Feedback</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Jisp Xamarin Version</h1>
+        </div>
+
+        <div id="instructions" class="bs-docs-section">
+            <h2>Tester Instructions</h2>
+
+            <p>
+                Thank you for taking part of the Jisp pilot programme. Please install the app onto your Android or iPhone
+                device (<a href="#installation">installation</a> details below).
+            </p>
+
+            <p>
+                Your feedback is greatly valuable to us and we are looking for feedback that covers the following:
+            </p>
+
+            <ul>
+                <li>Does the app look and feel right?</li>
+                <li>Did you receive offers when you entered a store?</li>
+                <li>Were there any confusing things about the app?</li>
+                <li>Were there any features you didn't like or want to use, or features you wish it had?</li>
+                <li>What could be improved about the offers given to you?</li>
+                <li>Did you experience any technical issues?</li>
+            </ul>
+        </div>
+
+        <div id="feedback" class="bs-docs-section">
+            <h2>Submitting Feedback</h2>
+
+            <p>
+                There are two easy ways to submit feedback.
+            </p>
+
+            <ol>
+                <li>
+                    There is a <strong>Provide feedback</strong> menu item in the app. This is a great way to express what
+                    you're thinking at any moment when using the app. Just type what your thoughts and it will be sent
+                    directly to us.
+                </li>
+                <li>
+                    Email us any particular feedback to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a>. Please include the following to help us make improvements:
+                    <ul>
+                        <li>The device you are using (e.g. iPhone 6, Samsung Galaxy S3)</li>
+                        <li>The shop you were in if it was related to a given shop</li>
+                        <li>A screenshot of the app if it doesn't look right (<strong>Power</strong> + <strong>Home</strong> button iOS, <a href="http://www.pcadvisor.co.uk/how-to/google-android/how-take-screenshot-on-android-phones-tablets-3446798/" rel="noreferrer" target="_blank">See this</a> for Android).</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div id="installation" class="bs-docs-section">
+            <h2>Installation Instructions</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>iPhone</h3>
+
+                    <ol>
+                        <li>
+                            Email your UDID number number to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a> to be included in the pilot for iPhone
+                            <ol>
+                                <li>Go to <a href="http://get.udid.io/" target="_blank">http://get.udid.io/</a> in Safari on your iPhone</li>
+                                <li>Tap <strong>Get your UDID</strong>, this will take you to a screen saying <strong>Install Profile</strong></li>
+                                <li>Tap <strong>Install</strong> and follow the onscreen instructions</li>
+                                <li>Copy your UDID and send it via email to <a href="mailto:dev@lookupbubbles.com">dev@lookupbubbles.com</a></li>
+                            </ol>
+                        </li>
+                        <li>When we confirm that you are registered to the pilot, select <strong>Install</strong> from the downloads list below for iOS. The app will install in the background and you can find it on your home screen.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div id="downloads" class="bs-docs-section">
+            <h3>Downloads</h3>
+            <table id="releases" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th><i class="fa fa-apple"></i> Stage ver.</th>
+                        <th><i class="fa fa-apple"></i> Live ver.</th>
+                        <th><i class="fa fa-android"></i> Stage ver.</th>
+                        <th><i class="fa fa-android"></i> Live ver.</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="v1-0-13">
+                    <tr>
+                        <td>1.0.13</td>
+                        <td>Initial test version</td>
+                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/New/v1.0.13/manifest-dev.plist">Install</a></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td><a href="#" class="release-notes">Release Notes</a></td>
+                    </tr>
+                    <tr class="expanded">
+                        <td colspan="7">
+                            <h3>Release notes</h3>
+
+                            <p>
+                                First version with the following features:
+                            </p>
+
+                            <ul>
+                                <li>Account sign up, login and password reset</li>
+                                <li>Browse stores</li>
+                                <li>Store info</li>
+                                <li>Manage account</li>
+                                <li>Set personality profile</li>
+                            </ul>
+
+                            <h3>Known issues</h3>
+
+                            <ul>
+                                <li>First test version</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="bs-docs-section">
+            <p>
+                Copyright &copy; 2016 Bubbles Online Services Ltd
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+<!-- ReSharper restore Html.PathError -->
