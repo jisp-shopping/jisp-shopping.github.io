@@ -14,8 +14,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script tpye="text/javascript">
         $(document).ready(function () {
-            $('.release-notes').click(function () {
-                $(this).next().toggleClass('expanded');
+            $('.release-notes').click(function (e) {
+                if (!$(e.target).hasClass('install'))
+                    $(this).next().toggleClass('expanded');
             });
         });
 
@@ -158,7 +159,7 @@
                     <tr class="release-notes">
                         <td>1.0.13</td>
                         <td>Initial test version</td>
-                        <td><a href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/new/v1.0.13/manifest-dev.plist">Install</a></td>
+                        <td><a class="install" href="itms-services://?action=download-manifest&url=https://jisp-shopping.github.io/new/v1.0.13/manifest-dev.plist">Install</a></td>
                         <td>N/A</td>
                         <td>N/A</td>
                         <td>N/A</td>
